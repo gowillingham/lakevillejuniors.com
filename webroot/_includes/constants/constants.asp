@@ -1,0 +1,15 @@
+<script runat="server" language="vbscript">
+
+	Const EDIT_REGISTRATION = "7"
+	Const DELETE_REGISTRATION = "5"
+	Const ACCEPT_PAYMENT = "4"
+	Const CONFIRM_PAYMENT = "2"
+	Const CONFIRM_REGISTRATION_COMPLETE = "6"
+	Const IS_POSTBACK = "1"
+	Const INSERT_REGISTRATION = "1"
+	
+	Const SESSION_BEGINNER = 1
+	Const SESSION_INTERMEDIATE = 2
+	Const SESSION_ADVANCED = 3
+	
+</script>

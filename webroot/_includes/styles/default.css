@@ -1,0 +1,355 @@
+/* css reset */
+
+/* Don't forget to set a foreground and background color 
+   on the 'html' or 'body' element! */
+html, body, div, span,
+applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dd, dl, dt, li, ol, ul,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100.1%;
+	line-height: 1.3;
+	font-family: inherit;
+	text-align: left;
+	vertical-align: baseline;
+}
+a img, :link img, :visited img {
+	border: 0;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	margin:10px 0 10px 0;
+}
+ol, ul {
+	list-style: none;
+}
+q:before, q:after,
+blockquote:before, blockquote:after {
+	content: "";
+}
+
+/* site styles */
+
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 1.0em;
+	color: #666666;
+	background-color: #FBFEFF;
+	}
+h2		{margin:25px 0 10px 0;}
+table {
+	margin:10px 0 10px 0;
+}
+td {
+	padding:3px;
+	}
+a {	
+	color:blue;
+	text-decoration:none;
+	}
+a:hover {
+	text-decoration:underline;
+	}
+strong {
+	font-weight:bold;
+	}
+	
+p, h1, ul		{margin:10px;}
+p				{font-size:.8em;}
+h1				{font-size:1.1em;font-weight:bold;}
+
+/* grids */
+.grid			{padding:0;margin:10px;border:solid 1px gray;width:960px;overflow:auto;}
+.grid p			{font-size:.7em;}
+.grid h1		{font-size:1.0em;font-weight:bold;}
+.grid table		{margin:0 !important;font-size:.7em;border:none;}
+.grid th		{padding:2px 3px;font-weight:bold;background-color:#000;color:#fff;border:solid 1px #000;white-space:nowrap;}
+.grid td		{padding:2px 3px;border:none;}
+.grid .no-break {white-space:nowrap;}
+.grid .currency {text-align:right;}
+.grid .odd		{background-color:#EFFBFF;}
+
+/* forms */
+
+.form table {
+	width:100%;
+	}
+.form textarea {
+	font-family: Tahoma, "MS Sans Serif", Arial, "Sans Serif";
+	font-size:1.0em; 
+	border:solid 1px #e70000;
+	height:75px;
+	padding:2px;
+	}	
+.form input.button {
+	border:solid 1px #000;
+	font-size:1.2em;
+	width:auto;
+	}
+.form .label {
+	font-weight:bold;
+	width:225px;
+	color:#5f5f5f;
+	vertical-align:middle;
+	}
+.form input,
+.form password,
+.form select {
+	border:solid 1px #e70000;
+	padding:1px;
+	}
+.form .checkbox {
+	
+	border:none;
+	padding:0;
+	margin:0;
+	}
+.form .small {
+	width:75px;
+	}
+.form .medium {
+	width:250px;
+	}
+.form .large {
+	width:80%;
+	}
+.form .disabled {
+	font-style:italic;
+	color:#4f4f4f;
+	background-color:#EFEFFF; 
+	}	
+
+.form .hint {
+	font-size:1.0em;
+	font-style:italic;
+	text-align:left;
+	padding:3px;
+	color:#4b5655;
+	white-space:normal;
+	}
+.form .hint .reminder {
+	color:red;
+	font-weight:bold;
+	}
+.form .hint .icon {
+	float:left;
+	margin:0 5px 0 0;
+	}
+.form .hint a {
+	color:#e70000;
+	}
+	
+/* table for displaying purchase info */
+.invoice,
+.confirm {
+	width:100%;
+	border:1px solid #cfcfcf;
+	border-collapse:collapse;
+	}
+.invoice .header,
+.confirm .header {
+	 background-color:#cfcfcf;
+	 font-weight:bold;
+	 }
+.invoice .label,
+.confirm .label {
+	width:200px;
+	font-weight:bold;
+	}
+table.confirm td {
+	vertical-align:middle;
+	}
+table.invoice td {
+	vertical-align:top;
+	}
+		
+/* error formatting */
+.errFirstLine
+    /* span for first line*/
+   {  color:red;
+      }
+.errText
+   /* span for text */
+   {  color:blue;
+      }
+.errMessage
+   /* span for entire message */
+   {  font-size:1.0em;
+      padding-bottom:15px;
+      }
+.msgFirstLine
+   /* span for first line */
+   {  color:blue;
+      }
+.msgText
+	{color: blue;
+		}
+.msgMessage
+   /* span for entire message */
+   {  font-size:1.0em;
+      padding-bottom:5px;
+      }
+.msgGraphic
+   {  padding-right:5px;
+      vertical-align:top;
+      }
+      
+.summary .listing							{border-collapse:collapse;border:solid 2px #cacaca;margin:10px 10px 30px;}
+.summary .listing td						{border:solid 1px #cacaca;padding:3px;}
+.summary .listing th						{color:#fff;font-weight:bold;background-color:#cacaca;border:solid 1px #cacaca;padding:3px;}
+.summary .listing .label					{padding-right:50px;font-weight:bold;}
+.summary h1									{padding:0;margin:10px;}
+
+
+#ContentPane div.large-error					{background-color:#ffff56;margin-bottom:20px;padding:5px;border:solid 2px #cacaca;}
+#ContentPane div.large-error h2					{font-size:1.5em;font-weight:bold;color:red;padding:6px 0 6px 35px;background: url(/_images/exclamation.png) no-repeat 0 50%;}
+#ContentPane div.large-error p					{color:black;font-size:1.2em;}
+      
+#ContentPane div.application-message				{padding:0;margin:15px 0;background-color:#f9e587;border:solid 1px #f7a50d;color:#000;font-size:1.1em;}
+#ContentPane div.application-message p				{width:auto;padding:15px 25px 15px 40px;margin:0;background-repeat:no-repeat;background-position:15px 16px;}
+#ContentPane div.application-message span			{font-weight:bold;}
+#ContentPane div.application-message p.confirm		{background-image: url(/_images/confirm.png);}
+#ContentPane div.application-message p.confirm span	{color:Green;}
+#ContentPane div.application-message p.warning		{background-image: url(/_images/alert.png);}
+#ContentPane div.application-message p.warning span	{color:Red;}
+#ContentPane div.application-message p.error		{background-image: url(/_images/critical.png);}
+#ContentPane div.application-message p.error span	{color:Red;}
+
+#Layout	{
+	width:100%;
+	height:100%;
+	font-size:0.8em;
+	margin:0;
+	padding:0;
+	border-collapse:collapse;
+	}
+	
+	
+#HeaderRow	{
+	background-image: url('/_images/topbar_red4.gif');
+	background-repeat:repeat-x;
+	height:25px;
+	vertical-align:middle;
+	}
+#HeaderRow a
+	{	color:#ffffff;
+		}
+#HeaderLeft	{
+	padding: 0px 5px 0px 5px;
+	font-weight:bold;
+	font-size:12px;
+	vertical-align:middle;
+	}
+#HeaderMid {
+	}
+#HeaderRight {
+	color:#ffffff;
+	text-align:right;
+	padding: 0px 5px 0px 5px;
+	}
+#TopMenu	{
+	font-size:0.8em;
+	padding: 6px 5px 0px 5px;
+}
+#TopMenuRight {
+	text-align:right;
+	padding: 6px 5px 0px 5px;
+	font-size: 0.8em;
+	}
+#TopMenu a
+	{	margin:0 15px 0 0;
+		color:#555555;
+		font-weight:bold;
+		}
+		
+#Content
+	{	padding:25px 0 0 0;
+		vertical-align:top;
+		}
+#ContentTable {
+	width:100%;
+	height:100%;
+	vertical-align:top;
+}
+#LeftPane {
+	vertical-align: top;
+	padding: 0px 10px 0px 10px;
+	width:1%;
+	border-style:solid;
+	border-width:1px;
+	border-color:gray;
+	border-top:none;
+	border-left:none;
+	border-bottom:none;
+}
+
+#LeftPane h2                    {margin:20px 0;padding:0;font-size:15px;font-weight:bold;text-align:center;}
+#LeftPane .product              {text-align:center;border:2px solid #ddd;padding:10px 10px;margin:10px 0;}
+#LeftPane .product .image-link  {margin:0;}
+#LeftPane .product .text-link   {margin:15px 0 0 0;display:block;text-align:center;font-size:12px;}
+
+#ContentPane {
+	vertical-align: top;
+	padding: 0px 5px 0px 10px;
+		}
+#ContentPane h1
+	{	font-size:1.3em;
+		font-weight:bold;
+		padding:0 0 0 0;
+		margin:5px 0 20px 0;
+		}
+#ContentPane h2
+	{	font-size:1.1em;
+		font-weight:bold;
+		padding:0 0 0 0;
+		margin:5px 0 8px 0;
+		}
+#ContentPane h3
+	{	font-size:1.1em;
+		font-weight:bold;
+		padding:0 0 0 0;
+		margin:5px 0 8px 0;
+		}
+#ContentPane p
+	{	font-size:0.9em;
+		padding:0 0 0 0;
+		margin:5px 0 15px 0;
+		}
+
+#RightPane {
+	vertical-align: top;
+	padding: 0px 5px 0px 5px;
+}#FooterRow	{
+	vertical-align: bottom;
+}
+
+#FooterTable {
+	vertical-align:bottom;
+	margin: 25px 0 0 0;
+	font-size: 11px;
+	padding: 15px 0 0 0;
+}
+
+#FooterMid	{
+
+}
+
+#FooterLeft {
+	padding: 0px 5px 5px 5px;
+}
+
+#FooterRight {
+
+}
+
+

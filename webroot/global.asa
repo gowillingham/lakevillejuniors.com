@@ -1,0 +1,120 @@
+<!--METADATA TYPE="TypeLib" NAME="Microsoft ActiveX Data Objects 2.7 Library" UUID="{EF53050B-882E-4776-B643-EDA472E8E3F2}" VERSION="2.7"-->
+<!--METADATA TYPE="TypeLib" NAME="Microsoft CDO For Exchange 2000 Library" UUID="{CD000000-8B95-11D1-82DB-00C04FB1625D}" VERSION="1.0"-->
+<SCRIPT LANGUAGE="VBScript" RUNAT="Server">
+
+'EventName              Description
+'Session_OnStart        Runs the first time a user runs any page in your application
+'Session_OnEnd          Runs when a user's session times out or quits your application
+'Application_OnStart    Runs once when the first page of your application is run for the first time by any user
+'Application_OnEnd      Runs once when the web server shuts down
+
+</SCRIPT>
+
+<SCRIPT LANGUAGE="VBScript" RUNAT="Server">
+Sub Session_OnStart()
+
+	If Len(Application.Value("CNN_STR")) = 0 Then
+	
+		' these are global/remote server settings
+		'---------------------------------------------------------------------
+		
+		' connection string
+		Application.Value("CNN_STR") = "Provider=sqloledb;" & _
+			"Data Source=P91222\SQLEXPRESS;" & _
+			"Initial Catalog=lakevillejuniors;" & _
+			"User ID=weblogin;" & _
+			"Password=worshipschedule;"
+			
+		' enable online registration
+		Application.Value("IS_REGISTRATION_ENABLED") = True
+		
+		' paypal gateway address
+		Application.Value("PAYPAL_GATEWAY") = "https://www.paypal.com/cgi-bin/webscr"
+		
+		' paypal business id
+		Application.Value("PAYPAL_BUSINESS_ID") = "info@lakevillejuniors.com"
+		
+		' live site flag ..
+		Application.Value("IsLiveSite") = True
+		'----------------------------------------------------------------------
+		
+		' these are remote beta site specific settings
+		If Request.ServerVariables("SERVER_NAME") = "beta.lakevillejuniors.com" Then
+		
+			' connection string
+			Application.Value("CNN_STR") = "Provider=sqloledb;" & _
+				"Data Source=server24;" & _
+				"Initial Catalog=lakevillejuniors_beta;" & _
+				"User ID=weblogin;" & _
+				"Password=worshipschedule;"
+
+			' enable online registration
+			Application.Value("IS_REGISTRATION_ENABLED") = True
+			
+			' paypal gateway address
+			Application.Value("PAYPAL_GATEWAY") = "https://www.sandbox.paypal.com/cgi-bin/webscr"
+		
+			' paypal business id
+			Application.Value("PAYPAL_BUSINESS_ID") = "willin_1199747222_biz@lakevillejuniors.com"
+			
+			' live site flag ..
+			Application.Value("IsLiveSite") = False
+		End If
+		
+		
+		' these are local/dev server settings
+		' ---------------------------------------------------------------------
+		If Request.ServerVariables("SERVER_NAME") = "lakevillejuniors.local" Then
+		
+			' connection string
+			Application.Value("CNN_STR") = "Provider=sqloledb;" & _
+				"Data Source=ACERLAPTOP;" & _
+				"Initial Catalog=lakevillejuniors;" & _
+				"User ID=weblogin;" & _
+				"Password=worshipschedule;"
+				
+			' enable online registration
+			Application.Value("IS_REGISTRATION_ENABLED") = True
+			
+			' dev server flag
+			Application.Value("IS_DEVELOPMENT_SERVER") = True
+			
+			' paypal gateway address
+			Application.Value("PAYPAL_GATEWAY") = "https://www.sandbox.paypal.com/cgi-bin/webscr"
+		
+			' paypal business id
+			Application.Value("PAYPAL_BUSINESS_ID") = "willin_1199747222_biz@lakevillejuniors.com"
+
+			' live site flag ..
+			Application.Value("IsLiveSite") = False
+		' ---------------------------------------------------------------------
+
+		End If	
+	End If
+End Sub
+
+Sub Application_OnStart
+	' global application name
+	Application.Value("APPLICATION_NAME") = "lakevillejuniors.com"
+	' global company name
+	Application.Value("COMPANY_NAME") = "Lakeville Juniors"
+	
+	' pickup folder
+	Application.Value("cEmailSender.PICKUP_FOLDER") = "c:\inetpub\mailroot\pickup"
+	
+	' global support email address
+	Application.Value("SUPPORT_EMAIL_ADDRESS") = "support@lakevillejuniors.com"
+	' global admin email address
+	Application.Value("ADMIN_EMAIL_ADDRESS") = "admin@lakevillejuniors.com"
+	' global admin email address
+	Application.Value("INFO_EMAIL_ADDRESS") = "info@lakevillejuniors.com"
+	' application error email address
+	Application.Value("APPLICATION_ERROR_EMAIL_ADDRESS") = "application_error@lakevillejuniors.com"
+	
+	' current league first session date
+	Application.Value("INHOUSE_LEAGUE_FIRST_SESSION_DATE") = "Saturday April 14, 2012"
+	' current league version
+	Application.Value("INHOUSE_LEAGUE_VERSION") = "Spring 2012"
+End Sub
+
+</SCRIPT>
