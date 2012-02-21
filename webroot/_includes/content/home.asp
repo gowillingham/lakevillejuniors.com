@@ -7,6 +7,7 @@
 		In-house volleyball offers volleyball instruction and play for girls in grades 1-5.
 		Sessions will be held on five Saturday mornings beginning in April (see below).
 		Cost is $70 per player, with all sessions being held at Lakeville North ors Lakevills South high schools.
+		The registration deadline is Sunday, April 8th (registration will be accepted online after the deadline).
 		You may register now by visiting our <strong><a href="/register.asp" title="Online registration">online registration</a></strong>.
 	</p>
 	<p>Prefer to complete and mail a paper (.pdf) registration? Download it <strong><a href="/_files/inhouse_flyer.pdf">here</a></strong>. </p>
