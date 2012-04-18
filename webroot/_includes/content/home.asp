@@ -14,9 +14,11 @@
 	<p>Prefer to complete and mail a paper (.pdf) registration? Download it <strong><a href="/_files/inhouse_flyer.pdf">here</a></strong>. </p>
 -->
 	<div class="application-message">
-		<h3>Important - Site change for April 21 session</h3>
-		<p>
-			Due to a schedule conflict, our Saturday April 21 in-house volleyball session is moved to Lakeville South HS.
+		<p class="error">
+			<span>Important - Site change for Saturday April 21 session</span>
+			<br /><br />
+			Due to a schedule conflict, the <strong>Saturday April 21st in-house volleyball session is moved to Lakeville South HS.</strong>
+			Scheduled start/end times will remain the same (schedule below is correct). 
 			This is a change from the schedule you originally received. 
 			Sorry about the inconvenience!
 		</p>
@@ -25,7 +27,7 @@
 	<h2>Spring 2012 In-house volleyball session dates</h2>
 	<ul>
 		<li>Saturday Apr 14 (North HS)</li>
-		<li>Saturday Apr 21 (North HS)</li>
+		<li>Saturday Apr 21 (South HS)</li>
 		<li>Saturday May 5 (South HS)</li>
 		<li>Saturday May 12 (Norths HS)</li>
 		<li>Saturday May 19 (South HS)</li>
