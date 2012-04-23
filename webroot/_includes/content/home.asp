@@ -13,16 +13,17 @@
 	</p>
 	<p>Prefer to complete and mail a paper (.pdf) registration? Download it <strong><a href="/_files/inhouse_flyer.pdf">here</a></strong>. </p>
 -->
-	<div class="application-message">
-		<p class="error">
-			<span>Important - Site change for Saturday April 21 session</span>
-			<br /><br />
-			Due to a schedule conflict, the <strong>Saturday April 21st in-house volleyball session is moved to Lakeville South HS.</strong>
-			Scheduled start/end times will remain the same (schedule below is correct). 
-			This is a change from the schedule you originally received. 
-			Sorry about the inconvenience!
-		</p>
-	</div>
+
+	<h2>Summer volleyball camp registrations!</h2>
+	<p>
+		Please plan to attend a summer volleyball camp. 
+		Registration is being accepted now for both the Lakeville North and Lakeville South camps to be held in July.
+		Download either registration below.
+	</p>
+	<ul>
+		<li><a href="/_files/2012_north_vb_camp.pdf">Lakeville North Camp registration</a></li>
+		<li><a href="/_files/2012_south_vb_camp.pdf">Lakeville North Camp registration</a></li>
+	</ul>
 
 	<h2>Spring 2012 In-house volleyball session dates</h2>
 	<ul>
