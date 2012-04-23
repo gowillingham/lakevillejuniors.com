@@ -22,7 +22,7 @@
 	</p>
 	<ul>
 		<li><a href="/_files/2012_north_vb_camp.pdf">Lakeville North Camp registration</a></li>
-		<li><a href="/_files/2012_south_vb_camp.pdf">Lakeville North Camp registration</a></li>
+		<li><a href="/_files/2012_south_vb_camp.pdf">Lakeville South Camp registration</a></li>
 	</ul>
 
 	<h2>Spring 2012 In-house volleyball session dates</h2>
