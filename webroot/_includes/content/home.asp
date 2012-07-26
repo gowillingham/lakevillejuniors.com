@@ -1,19 +1,19 @@
 <h1>What's New at Lakeville Junior Volleyball!</h1>
 
 
-<!--	
+	
 	<h2>Register for Spring 2012 in-house volleyball league!!</h2>
 	<p>
-		Registration is now being accepted for the Spring 2012 session of in-house volleyball.
+		Registration is now being accepted for the Fall 2012 session of in-house volleyball.
 		In-house volleyball offers volleyball instruction and play for girls in grades 1-5.
-		Sessions will be held on five Saturday mornings beginning in April (see below).
-		Cost is $70 per player, with all sessions being held at Lakeville North ors Lakevills South high schools.
-		The registration deadline is Sunday, April 8th (registration will be accepted online after the deadline).
+		Sessions will be held on five Saturday mornings beginning in September.
+		Cost is $70 per player, with all sessions being held at Lakeville North or Lakeville South high schools.
+		<!-- The registration deadline is Sunday, April 8th (registration will be accepted online after the deadline). -->
 		You may register now by visiting our <strong><a href="/register.asp" title="Online registration">online registration</a></strong>.
 	</p>
 	<p>Prefer to complete and mail a paper (.pdf) registration? Download it <strong><a href="/_files/inhouse_flyer.pdf">here</a></strong>. </p>
--->
 
+<!--
 	<h2>Summer volleyball camp registrations!</h2>
 	<p>
 		Please plan to attend a summer volleyball camp. 
@@ -38,7 +38,7 @@
     The beginner session (grades 1-3) will run from 8:30-10:00 am.
     The intermediate session (grades 3-6) runs from 10:30-12:00 noon. 
   </p>
-  
+ --> 
   
   
 <!--	<h2>Not sure about your registration?</h2>

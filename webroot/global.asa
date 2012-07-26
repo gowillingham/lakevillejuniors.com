@@ -112,9 +112,9 @@ Sub Application_OnStart
 	Application.Value("APPLICATION_ERROR_EMAIL_ADDRESS") = "application_error@lakevillejuniors.com"
 	
 	' current league first session date
-	Application.Value("INHOUSE_LEAGUE_FIRST_SESSION_DATE") = "Saturday April 14, 2012"
+	Application.Value("INHOUSE_LEAGUE_FIRST_SESSION_DATE") = "[to be determined]"
 	' current league version
-	Application.Value("INHOUSE_LEAGUE_VERSION") = "Spring 2012"
+	Application.Value("INHOUSE_LEAGUE_VERSION") = "Fall 2012"
 End Sub
 
 </SCRIPT>
