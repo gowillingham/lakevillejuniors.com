@@ -7,6 +7,7 @@
 <head>
 	<link href="_includes/styles/default.css" rel="stylesheet" type="text/css" />
 	<title>Lakeville Juniors Home</title>
+	<meta name="google-site-verification" content="ylxe5I8j2eA7fhDUwo9DsK9Kww9KSb2_JDIOERjHmIk" />
 </head>
 	<body>
 		<!--#INCLUDE VIRTUAL="/_includes/maincontent.asp"-->
